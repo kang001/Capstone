@@ -8,16 +8,11 @@ print("Please enter a string: ")
 response = input()
 splitResponse = response.split(' ')
 
-responseList = []
+print("test please: ")
+s = input()
+lst = [word[0].upper() + word[1:] for word in s.split()]
+a = "".join(lst)
+print(a)
 
-for words in splitResponse:
 
-    singleWord = words.capitalize() #capitalize first character of each word
-    print(singleWord)
-    responseList.append(words)
-
-stringAgain = ''.join(singleWord)
 #stringAgain = str(splitResponse)
-print(responseList)
-print(splitResponse)
-print(stringAgain)
