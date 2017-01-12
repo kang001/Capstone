@@ -12,12 +12,12 @@ responseList = []
 
 for words in splitResponse:
 
-    singleWord = words.capitalize #capitalize first character of each word
+    singleWord = words.capitalize() #capitalize first character of each word
     print(singleWord)
     responseList.append(words)
 
-#stringAgain = ''.join(singleWord)
-stringAgain = str(splitResponse)
+stringAgain = ''.join(singleWord)
+#stringAgain = str(splitResponse)
 print(responseList)
 print(splitResponse)
 print(stringAgain)
