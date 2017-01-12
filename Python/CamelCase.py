@@ -10,11 +10,14 @@ splitResponse = response.split(' ')
 
 responseList = []
 
-for words in responseList:
+for words in splitResponse:
 
-    singleWord = words[0].upper() + words[1:] #capitalize first character of each word
-    #convertCamel = string.replace(" ","") #removes spaces
-    responseList.append(singleWord)
+    singleWord = words.capitalize #capitalize first character of each word
+    print(singleWord)
+    responseList.append(words)
 
-stringAgain = ''.join(responseList)
+#stringAgain = ''.join(singleWord)
+stringAgain = str(splitResponse)
 print(responseList)
+print(splitResponse)
+print(stringAgain)
